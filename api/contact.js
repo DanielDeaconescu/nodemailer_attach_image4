@@ -63,7 +63,7 @@ export default async (req, res) => {
 
     // Create the email
     const mailOptions = {
-      from: `Form Submission <${process.env.SMTP_HOST}>`,
+      from: `Form Submission <${process.env.SMTP_USER}>`,
       to: process.env.RECIPIENT_EMAIL,
       subject: `New Message from ${formData.fields.name}`,
       text: `Name: ${formData.fields.name}\n Email: ${formData.fields.email} \n Message: ${formData.fields.message}`,
