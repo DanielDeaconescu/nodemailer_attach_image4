@@ -84,7 +84,7 @@ form.addEventListener("submit", async (e) => {
 
   // Verify that the Turnstile Token exists
   const turnstileToken = document.querySelector(
-    'input[name="cf-turnstile-token"]'
+    'input[name="cf-turnstile-response"]'
   )?.value;
 
   if (!turnstileToken) {
